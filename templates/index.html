@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GCP System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <a href="/login"> Admin</a>
+    <a href="/?lang=ru">RU</a>
+    <a href="/?lang=kz">KZ</a>
+    <a href="/?lang=en">EN</a>
+</div>
+
+<div class="container">
+
+    <h1>{{ t.title }}</h1>
+    <p class="subtitle">{{ t.desc }}</p>
+
+    <form method="post">
+
+        <textarea name="text" placeholder="..."></textarea>
+
+        <br><br>
+
+        <label>{{ t.select }}</label>
+
+        <select name="department">
+            <option value="">{{ t.auto }}</option>
+            <option value="coordination">Координация</option>
+            <option value="evaluation">Оценка</option>
+            <option value="research">Исследования</option>
+            <option value="economy">Экономика</option>
+            <option value="expertise">Экспертиза</option>
+            <option value="transformation">Развитие</option>
+            <option value="legal_hr">Право и HR</option>
+            <option value="admin">Администрирование</option>
+        </select>
+
+        <br><br>
+
+        <button>{{ t.button }}</button>
+
+    </form>
+
+    {% if result %}
+        <div class="result">
+            <h3>{{ t.result }}</h3>
+            <p>{{ result }}</p>
+        </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

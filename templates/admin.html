@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+    <a href="/">🏠 Home</a>
+</div>
+
+<div class="container">
+
+    <h1>Админ панель</h1>
+
+    <!-- ЗАЯВКИ -->
+    <h2>Заявки</h2>
+
+    {% if requests %}
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Текст заявки</th>
+            <th>Департамент</th>
+        </tr>
+        {% for r in requests %}
+        <tr>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+            <td>{{ r[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p class="empty">Заявок пока нет</p>
+    {% endif %}
+
+    <hr>
+
+    <!-- ДОБАВИТЬ ДЕПАРТАМЕНТ -->
+    <h2>Добавить департамент</h2>
+
+    <form method="post" action="/add_department">
+        <input name="name" placeholder="Название департамента">
+        <input name="email" placeholder="Email">
+        <button type="submit">Добавить</button>
+    </form>
+
+    <hr>
+
+    <!-- СПИСОК ДЕПАРТАМЕНТОВ -->
+    <h2>Список департаментов</h2>
+
+    {% if departments %}
+    {% for d in departments %}
+    <div class="card">
+        <div>
+            <b>{{ d[1] }}</b><br>
+            <span class="card-info">{{ d[2] }}</span>
+        </div>
+
+        <form method="get" action="/delete_dept/{{ d[0] }}">
+            <button class="btn-danger" type="submit">
+                Удалить
+            </button>
+        </form>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p class="empty">Департаментов пока нет</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html>

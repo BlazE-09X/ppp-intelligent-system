@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вход — Админ панель</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="login-wrapper">
+    <div class="login-box">
+        <h2>Вход админа</h2>
+
+        {% if error %}
+        <p style="color:#7a1f2b; font-size:14px; margin-top:0;">{{ error }}</p>
+        {% endif %}
+
+        <form method="post">
+            <input name="username" placeholder="Логин">
+            <input name="password" type="password" placeholder="Пароль">
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
