@@ -23,18 +23,23 @@
 ### Скриншоттар
 
 **Басты бет**
+
 ![](screenshots/main.png)
 
 **Пайдаланушының өтінім жіберу мысалы**
+
 ![](screenshots/example.png)
 
 **Әкімшінің кіруі**
+
 ![](screenshots/admin.png)
 
 **Департаменті автоматты анықталған өтінім**
+
 ![](screenshots/main_admin.png)
 
 **Департаменттер тізімін басқару**
+
 ![](screenshots/depart.png)
 
 ### Технологиялар
@@ -65,18 +70,23 @@ A Flask-based web application that accepts user requests, automatically detects 
 ### Screenshots
 
 **Home page**
+
 ![](screenshots/main.png)
 
 **Example of a user submitting a request**
+
 ![](screenshots/example.png)
 
 **Admin login**
+
 ![](screenshots/admin.png)
 
 **Request with auto-detected department**
+
 ![](screenshots/main_admin.png)
 
 **Department list management**
+
 ![](screenshots/depart.png)
 
 ### Tech Stack
@@ -113,18 +123,23 @@ This project was developed as part of an internship (өндірістік пра
 ### Скриншоты
 
 **Главная страница**
+
 ![](screenshots/main.png)
 
 **Пример отправки заявки от пользователя**
+
 ![](screenshots/example.png)
 
 **Вход администратора**
+
 ![](screenshots/admin.png)
 
 **Заявка с автоматически определённым департаментом**
+
 ![](screenshots/main_admin.png)
 
 **Управление списком департаментов**
+
 ![](screenshots/depart.png)
 
 ### Технологии
