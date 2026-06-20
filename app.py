@@ -10,9 +10,6 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "gcp-internal-key-change-me-в-проде")
 
 # ---------------- DATABASE CONNECTION ----------------
-# Строка подключения берётся из переменной окружения DATABASE_URL.
-# Пример для локального PostgreSQL (см. файл .env):
-# DATABASE_URL=postgresql://gcp_user:gcp_password@localhost:5432/gcp_db
 
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
