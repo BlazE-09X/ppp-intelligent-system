@@ -23,19 +23,19 @@
 ### Скриншоттар
 
 **Басты бет**
-!(screenshots/main.png)
+(screenshots/main.png)
 
 **Пайдаланушының өтінім жіберу мысалы**
-!(screenshots/example.png)
+(screenshots/example.png)
 
 **Әкімшінің кіруі**
-!(screenshots/admin.png)
+(screenshots/admin.png)
 
 **Департаменті автоматты анықталған өтінім**
-!(screenshots/main_admin.png)
+(screenshots/main_admin.png)
 
 **Департаменттер тізімін басқару**
-!(screenshots/depart.png)
+(screenshots/depart.png)
 
 ### Технологиялар
 
